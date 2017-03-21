@@ -19,12 +19,20 @@
 			</select>
 			<label>ARS</label>
 		</div>
+	  </div>
 		
-		
-		<div class="row"> 
-			<div class="input-field col s6">
+	  <div class="row"> 
+			<div class="input-field col s8">
 				<input id="eNARS" type="text" class="validate">
 				<label for="eNARS">Número de ARS</label>
+			</div>
+			<div class="input-field col s8">
+				<select>
+					<option value="1" selected>Subsidiado</option>
+					<option value="2">Constributivo</option>
+	
+			</select>
+			<label>ARS</label>
 			</div>
       </div>
 	  
