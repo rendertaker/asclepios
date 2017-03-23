@@ -17,6 +17,18 @@ if(!defined('BASEPATH'))exit('No direct access allowed');
             $query = $this->db->get('pacientes');
             return $query->result();
         }
+
+        /**
+         * add function
+         * Metodo para guardar datos en la base de datos
+         * @return void
+         */
+        public function add(){
+            $this->load->database();
+            $data_insertar = $this->input->post();
+            unset($data_insertar['btn_enviar']);
+            $this->db->insert('pacientes',data_insertar);
+        }
 	}
 
 /* Fin del Archivo m_pacientes.php */

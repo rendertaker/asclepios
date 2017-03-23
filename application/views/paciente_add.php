@@ -19,7 +19,7 @@
         
     <div class="row">
 	    <div class="input-field col s5">
-			<select>
+			<select  name="id_paciente" id="id_paciente">
 					<option value="" disabled selected>Choose your option</option>
 					<option value="1">Option 1</option>
 					<option value="2">Option 2</option>
@@ -29,7 +29,7 @@
 		</div>
 	  </div>
 
-      <?php echo form_submit('bt_enviar','Guardar'); ?>  
+      <?php echo form_submit('btn_enviar','Guardar'); ?>  
       <?php echo form_close(); ?>
     </div>
 		

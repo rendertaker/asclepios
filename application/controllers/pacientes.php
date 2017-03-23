@@ -21,7 +21,16 @@
 		public function add(){
 
 			$this->load->helper('form');//metodos para manejo de formularios
-			$this->load->view('paciente_add');
+
+			if($this->input->post()){
+				echo 'informacion recibida';
+				echo '<pre>';
+				var_dump($this->input->post());
+				echo '</pre>';
+			}else{
+				$this->load->view('paciente_add');
+			}
+			
 		}
 	}
 ?> 
