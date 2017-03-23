@@ -7,6 +7,16 @@
 </script>
 </head>
 <body>
+
+<?php
+  //aqui reviso que el arreglo no tiene un registro
+			if(empty ($listado)){
+				echo 'Sin Pacientes';
+			}else{
+				echo 'Tiene Pacientes';
+			}
+?>
+
 	<div class="row">
     <form class="col s12">
       <div class="row">
